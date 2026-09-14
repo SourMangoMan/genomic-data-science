@@ -2,7 +2,7 @@
 
 First-time bioinformatics work in Python using Biopython, covering sequence parsing, BLAST searches against NCBI databases, and a handwritten module containing functions whose input is a FASTA file leading to outputs such as record counting, sequence length stats, and open reading frame detection.
 
-These are basic things meant for practicing coding in a computational biology/bioinformatics setting, PEP 8 style, and Google style docstrings to familiarise myself with what best practice is.
+These are basic things meant for practising coding in a computational biology/bioinformatics setting, PEP 8 style, and Google style docstrings to familiarise myself with what best practice is.
 
 ## What's in here
 
@@ -29,17 +29,17 @@ These are basic things meant for practicing coding in a computational biology/bi
 
 - Built from scratch an ORF-finding algorithm for any given reading frame without relying on external bioinformatics tools
 - Used BLAST via `Biopython` to identify the origin organism of a DNA sequence
-- Practiced translating between manual sequence parsing and through the `Seq` object in `Biopython`
+- Practised translating between manual sequence parsing and through the `Seq` object in `Biopython`
 
 ## How to run
 
 1. Clone this repo:
 ```
-    git clone https://github.com/SourMangoMan/genomic-data-science.git
+git clone https://github.com/SourMangoMan/genomic-data-science.git
 ```
 
 2. Install the packages:
 ```
-    pip install Biopython
+pip install Biopython
 ```
 3. Open notebooks in Jupyter or VS Code and run from top to bottom. **`SeqDataAnalysis.ipynb`** uses **`dna.example.fasta`** as its data input.
