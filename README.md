@@ -6,16 +6,40 @@ These are basic things meant for practicing coding in a computational biology/bi
 
 ## What's in here
 
-More detail coming soon
+- **`BiopythonFirstExposure.ipynb`**: A self-introduction to the `Biopython` library.
+    - Running BLAST searches `Bio.Blast.NCBIWWW` against NCBI's nucleotide database 
+    - Running BLAST alignment to identify the most likely origin of unknown DNA sequence
+    - Working with `Seq` object by going through its documentation and using `complement()`, `reverse_complement()`, `translate()`, etc.
+
+- **`SeqDataAnalysis.ipynb`**: A basic sequence data analysis toolkit written from scratch without `Biopython` based on input from a Multi-FASTA file.
+    - Extracts from Multi-FASTA files and stores sequences in a dictionary format
+    - Reports basic numbers such as record counting, lengths of sequences, longest and shortest sequences with their sequence identifiers, etc.
+    - (Work in progress) Detects all open reading frames (ORFs) given a certain reading frame and finds longest ORFs per sequence per Multi-FASTA file
+    - (Work in progress) Detects all repeats of a given length and finds the most frequent repeat of a given length
+
+- **`dna.example.fasta`**: A sample Multi-FASTA file for the purpose of running **`SeqDataAnalysis.ipynb`**.
 
 ## Tools and Libraries
 
-More detail coming soon
+- Python 3.13
+- Biopython
+- Jupyter Notebook
 
 ## Key Takeaways
 
-More detail coming soon
+- Built from scratch an ORF-finding algorithm for any given reading frame without relying on external bioinformatics tools
+- Used BLAST via `Biopython` to identify the origin organism of a DNA sequence
+- Practiced translating between manual sequence parsing and through the `Seq` object in `Biopython`
 
 ## How to run
 
-More detail coming soon
+1. Clone this repo:
+```
+    git clone https://github.com/SourMangoMan/genomic-data-science.git
+```
+
+2. Install the packages:
+```
+    pip install Biopython
+```
+3. Open notebooks in Jupyter or VS Code and run from top to bottom. **`SeqDataAnalysis.ipynb`** uses **`dna.example.fasta`** as its data input.
