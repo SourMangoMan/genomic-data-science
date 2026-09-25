@@ -14,8 +14,8 @@ These are basic things meant for practising coding in a computational biology/bi
 - **`SeqDataAnalysis.ipynb`**: A basic sequence data analysis toolkit written from scratch without `Biopython` based on input from a Multi-FASTA file.
     - Extracts from Multi-FASTA files and stores sequences in a dictionary format
     - Reports basic numbers such as record counting, lengths of sequences, longest and shortest sequences with their sequence identifiers, etc.
-    - (Work in progress) Detects all open reading frames (ORFs) given a certain reading frame and finds longest ORFs per sequence per Multi-FASTA file
-    - (Work in progress) Detects all repeats of a given length and finds the most frequent repeat of a given length
+    - Detects all open reading frames (ORFs) given a certain reading frame and finds longest ORFs per sequence per Multi-FASTA file
+    - Detects all repeats of a given length and finds the most frequent repeat of a given length
 
 - **`dna.example.fasta`**: A sample Multi-FASTA file for the purpose of running **`SeqDataAnalysis.ipynb`**.
 
